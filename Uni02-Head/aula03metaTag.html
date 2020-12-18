@@ -1,0 +1,24 @@
+<!DOCTYPE html> <!--Como trabalhar com a tag meta. Metadados são dados que dão informações sobre outros dados, no caso são informações sobre a pag q são dadas a outros softwares, como os softwares de busca, o navegador etc -->                               
+<html lang="pt-br">                 
+<head>
+    <title>Unidade 02 - Elemento Head</title>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Thais C."><!-- estou falando por meio da tag meta que o autor dessa pag e Thais C. e isso vale para as d+ metas aqui-->
+    <meta name="generator" content="VScode"> 
+    <meta name="keywords" content="HTML5, Curso html, CSS, Java script">
+    <meta name="description" content="Página do curso de HTML5"> 
+    <meta name="application-name" content="iMidia Brasil" >
+    <meta http-equiv="refresh" content="4"><!-- meta tag para atualizar a pag de 4 em 4 segundos-->
+
+    <script>//função em js para sortear um numero entre 0 e 50 quando a janela for carregada
+        function sorteioNumero(){
+            resultado.innerHTML=Math.random()*50;
+        }
+        window.onload=sorteioNumero;
+    </script>
+
+</head>
+<body>
+    <p id="resultado"></p><!-- o "resultado" está recebendo a função js-->
+</body>
+</html>
