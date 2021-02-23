@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Curso HTML5 Essencial</title>
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        <form action="#" method="POST"><!--o metodo post serve para enviar informações "escondidas" para inserção no BD por exemplo, o get para informações que ficarão na url, serve para pag de pesquisas por exemplo, o get tem limitação de 255 caracteres o post não tem essa limitação -->
+        
+        <label for="nome">Nome Completo</label>   
+        <input type="text" name="nomecompleto" id="nomecompleto" size="30" maxlength="100"><!-- size é o tamanho do espaço de inserção e o maxlength é a quantidade de caracteres que o campo pode receber-->   
+        
+        <label for="nome">Telefone</label>   
+        <input type="text" name="telefone" id="telefone">
+        
+        <label for="nome">E-mail</label>   
+        <input type="text" name="E-mail" id="E-mail">  
+        </form>   
+        <input type="submit" value="Enviar" id="Enviar" name="Enviar">
+    </body>
+</html>
