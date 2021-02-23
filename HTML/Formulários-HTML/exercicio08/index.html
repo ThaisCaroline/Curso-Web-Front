@@ -5,9 +5,16 @@
         <title>Curso HTML5 Essencial</title>
     </head>
 
-    <body>
+    <body><!--Como são feitas aquelas listas de opções através do datalist, ele faz o filtro dependendo do que o usuário digita-->
         <form action="index.html" method="post">
-            
+            <input type="text" list="lojas" name="nomeloja" placeholder=" digite o nome da loja" size="50">
+            <datalist id="lojas">
+                <option value="Centauro">Centauro</option>
+                <option value="Cent">Cent</option>
+                <option value="Auro">Auro</option>
+                <option value="Uuro">Uuro</option>
+                <option value="Cen">Cen</option>
+            </datalist>
         </form>
     </body>
 </html>
