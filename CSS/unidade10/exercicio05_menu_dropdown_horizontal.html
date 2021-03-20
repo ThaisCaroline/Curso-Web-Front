@@ -9,48 +9,64 @@
                 font-size:13px;
                 margin:0;padding:0;
             }
-
-            #menu {
-
+            nav{/*centralizar menu*/
+                width: 600px;
+                margin: 0 auto;
             }
-
-            #menu ul {
-
+            nav ul{
+                margin: 0%;padding: 0%;
+                list-style: none; 
             }
-
-            #menu ul li {
-
+            nav ul li{
+                float: left;
+                position: relative;
             }
+           /*Menu horizontal principal*/
+           nav ul li a {
+               display: inline-block;
+               text-decoration: none;
+               color: darkgray;
+               background: #fff;
+               padding: 5px 10px;
+               border: 1px solid darkgrey;
+               margin-right: -5px;
+               width: 100px;/*largura dos elementos*/
 
-            /* Menu horizontal principal */
-            #menu ul li a {
 
-            }
+           }
+           /*Submenu*/
+           nav ul li ul{
+               display: none;
+               position: absolute;
+               padding-top: 5px;/*espaço entre menu e submenu*/
+           }
+           /*Iten do submenu*/
+           nav ul li ul li a{
+            width: 110px;
+            margin-top: -1px;
+            
+           }
+           
+           nav ul li ul li a:hover{
+                background-color: #ddd;
 
-            /* Submenu */
-            #menu ul li ul {
+           }
+           /*Pulo do gato, faz aparecer o submenu */
+           nav li:hover ul{
+            display: block; /**/
 
-            }
+           }
+           /*alterar a cor de background dos itens dos menus*/
+           nav ul li a:hover{
+            background-color: #ddd;
+           }
+           
+           
+           
+           
+          
 
-            /* Itens do submenu */
-            #menu ul li ul li a {
-
-            }
-
-            #menu ul li ul li a:hover  {
-
-            }
-
-            /* PULO DO GATO!!  Faz aparecer o menu */
-            #menu li:hover ul {
-
-            }
-
-            /* Alterar a cor de background dos itens do menu */
-            #menu ul li a:hover {
-
-            }
-
+        
         </style>
 
     </head>
