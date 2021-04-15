@@ -2,7 +2,11 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            
+            var frase="Ana aluna do curso de js fundamental";
+            console.log(frase.split(" ")); //variavel.split("simbolo divisor para a captura") essa função divide a sting como em um array, o simbolo divisor vai dizer onde termina um elemento e começa outro para a captura, no exeplo, o espaço é o divisor, assim ele pega cada palavra
+            var primeira_palavra=frase.split(" ")[0];// aqui estamos atribuindo a variavel primeira paravra, o elemento contido no array formado pela função split na posição 0
+
+            console.log("Oi"+primeira_palavra+"bom dia"); // aqui formamos uma frase concatenando o elemento
         </script>
     </head>
     <body>
