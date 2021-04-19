@@ -11,13 +11,26 @@
             <a href="#">Argentina</a>
             <a href="#">Uruguai</a>
             <a href="#">Chile</a>
+            
         </nav>
-        
-		<!-- scripts -->
-        <script src="jquery-3.2.1.min.js"></script>
+        <a href="#">Canadá</a>
+		<!-- scripts vamos contar quantos elementos temos via jquery -->
+      
+        <script src="jquery-3.6.0.min.js"></script>
+         <!-- 
+        <script>
+            alert("Essa página contém "+$("nav a").length +"links")
+        </script>
+        -->
         <script>    
         	$( function() {
-				
+				$("nav a").css("color","red");//alterando o css com jquery
+                $("nav a").css("text-decoration","none");//tirando o sublinhado
+
+                //é possivel fazer os dois comandos de cima em uma unica linha:
+                //$("nav a").css("color","red").css("text-decoration","none");
+                //tambem é possivel definis tais alterações para um elemento especificio: $("nav a:frist") aqui somente o 1º elemento terá as alterações css, exitem tambe o : last,even que são os impares, e temos tambem o nth(x) que vc escolhe o elemento como em um vetor, substituindo o x pela posição do elemento, temos tambem para selecionar um elemento que tenha certa informação ex: a:contains('Brasil')
+            
 			})
         </script>   
                 

@@ -3,13 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title> 
-        
+        <script src="jquery-3.6.0.min.js"></script>
         <script>
-			function inicial() {
-                alert("Página carregada com sucesso")
-            }
-            
-            window.onload = inicial;
+            $(function(imprimeNaTela){
+                alert("Olá Mundo");
+            });
+
+            //você pode usar "$" como um nome de função em JavaScript. É uma abreviação para jQuery (). Que você pode usar se quiser. O jQuery pode ser executado no modo de compatibilidade se outra biblioteca já estiver usando o $. Basta usar jQuery.noConflict (). $ é comumente usado como uma função seletora em JS.
+
+            //  No jQuery, a função $ faz muito mais do que selecionar algumas coisas.
+
+            //Você pode passar um seletor para obter uma coleção de elementos correspondentes do DOM.
+            //Você pode passar uma função para executar quando o documento estiver pronto (semelhante a body.onload (), mas melhor).
+            //Você pode passar uma string de HTML para se transformar em um elemento DOM que você pode injetar no documento.
+            //Você pode transmitir um elemento DOM ou elementos que deseja agrupar com o objeto jQuery.
+            // Aqui está a documentação: https://api.jquery.com/jQuery/
+            // no caso do exemplo desse exercício o $ está substituindo o jQuery(document).ready(function(imprimeNaTel){...})
 		</script>
     </head>
 
