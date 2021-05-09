@@ -4,10 +4,13 @@
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         
-        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery-3.6.0.min.js"></script>
         <script>
 			$( function(e) {
-
+                    $("h1").html("Formação Desenvolvimento Web Completo");//aqui estamos adicionando conteudo a um elemento existente, no caso o elemento é o H1
+                    $("ul#listacursos").prepend("<li>Curso PHP</li>"); //AQUI ESTAMOS apresentando outro método para inserir elementos inesistentes: prepende (antes) append(depois)
+                    $("ul#listacursos").append("<li>Curso Bootstrap</li>");
+                    
 			} )
 		</script>
         
